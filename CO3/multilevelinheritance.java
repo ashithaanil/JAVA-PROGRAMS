@@ -70,22 +70,23 @@ class Teacher extends Employee
         System.out.println("\t\t\tTeacher Id : "+ Teacherid);
         System.out.println("\t\t\tDepartment : "+ Department);
         System.out.println("\t\t\tSubject Tought : "+ Subject);
-        System.out.println("\t\t___________________________________\n");
+        System.out.println("\t\t\n");
     }
 
 }
-class multilevel
+class multilevelinheritance
 {
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+{
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of Teacher : ");
         int size=sc.nextInt();
         Teacher t[]=new Teacher[size];
         for (int i=0;i<size;i++)
         {
-            System.out.println("------------------------------------");
+            System.out.println("\n");
             System.out.println("employee "+(i+1));
-            System.out.println("------------------------------------");
+            System.out.println("\n");
             t[i]=new Teacher();
         }
         for(int i=0;i<size;i++)
